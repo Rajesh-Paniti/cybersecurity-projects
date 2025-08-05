@@ -1,0 +1,8 @@
+Python if/else Logic Error
+This is a common logical error in Python where a series of independent if statements are used instead of a chained if-elif-else structure.
+
+Problem:
+A series of if statements can lead to unexpected behavior because multiple conditions might be true, or an else statement might execute when it shouldn't. In the provided password strength code, the independent if statements could cause the strength variable to be overwritten, leading to incorrect results. The final else statement only applies to the last if condition.
+
+Corrected Logic:
+Use an if-elif-else structure. This ensures that only one condition is evaluated as true and its corresponding code block is executed, correctly assigning the strength variable based on the score.
